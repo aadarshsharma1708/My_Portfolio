@@ -1,0 +1,119 @@
+@media screen and ( max-width:1400px) {
+    #profile{
+       height: 83vh;
+       margin-bottom: 6rem;
+
+    }
+    .about-container{
+        flex-wrap: wrap;
+    }
+}
+@media screen and ( max-width:1200px) {
+    #navbar{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+        height: 10vh;
+    }
+    #skills, .skills-details-container{
+        margin-top: 2rem;
+    }
+    #profile, .section-container{
+        display: block;
+    }
+    .arrow-icon{
+        display: none;
+    }
+    section, .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0% 5%;
+    }
+    .section-img-container{
+        height: 300px;
+        width: 300px;
+        margin: 0 auto 2rem;
+    }
+    .about-pic{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center ;
+        margin: 0 auto 2rem;
+    }
+    .about-container{
+        margin-top: 0;
+        /* flex-wrap: wrap; */
+    }
+}
+@media screen and ( max-width:600px){
+    #contact ,footer{
+        height: 40vh;
+    }
+    #profile{
+        height: 65vh;
+        margin-bottom: 0%;
+    } 
+    article{
+        font-size: 0.8rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-container, .contact-info-upper-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    
+    .btn-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info-container{
+        margin: 0%;
+    }
+    .contact-info-container p, .navlinks li a{
+        font-size: 1rem;
+    }
+    .skills-sub-title{
+        font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .navlinks{
+        
+        flex-direction: column;
+        text-align: center;
+        gap:0.5%
+        
+    }
+    .section-img-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center ;
+
+    }
+    .about-pic{
+        width: auto;
+        height: 46vw;
+        display: flex;
+        justify-content: center ;
+    }
+    .section-text .para1 {
+        font-size: 1rem;
+    }
+    .section-text .para2{
+        font-size: 1.3rem;
+    }
+    .section-text .title{
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+}
