@@ -33,11 +33,12 @@
                 <span></span>
             </div>
             <div class="hamburger-link">
-
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <ul class="navlinks">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -75,8 +76,8 @@
                     <div class="details-container">
                         <img src="workspace.png" alt="schooling icon" class="icon">
                         <h3>Experience</h3>
-                        <p>Fronted Developer <br>Biginner</p>
-                        <p>Backend Developer <br> Biginner</p>
+                        <p>Fronted Developer <br>Intermediate</p>
+                        <p>Backend Developer <br>Intermediate</p>
                     </div>
                     <div class="details-container">
                         <img src="school.png" alt="schooling icon" class="icon">
@@ -86,7 +87,9 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>I am a Computer Application student with a solid foundation in web development and problem-solving. I am passionate about creating innovative solutions to real-world challenges, particularly in designing adaptive systems and dynamic web applications.</p>
+                    <p>I am a Computer Application student with a solid foundation in web development and
+                        problem-solving. I am passionate about creating innovative solutions to real-world challenges,
+                        particularly in designing adaptive systems and dynamic web applications.</p>
                 </div>
             </div>
         </div>
@@ -126,14 +129,14 @@
                                 <img src="done.png" alt="done" class="icon">
                                 <div>
                                     <h3>React.js</h3>
-                                    <p>Basic</p>
+                                    <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
                                 <img src="done.png" alt="done" class="icon">
                                 <div>
                                     <h3>Node.js</h3>
-                                    <p>Basic</p>
+                                    <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
@@ -168,12 +171,12 @@
                                 <img src="done.png" alt="done" class="icon">
                                 <div>
                                     <h3>Java</h3>
-                                    <p>Basic</p>
+                                    <p>Intermediate</p>
                                 </div>
                             </article>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="details-container">
                     <div class="skills-sub-title">
@@ -227,29 +230,159 @@
             </div>
             <img src="arrow.png" alt="arrow" class="arrow-icon" onclick="location.href='#project'" />
     </section>
+
     <section id="project">
         <p class="project_text_P1">Browse my record</p>
         <h1 class="title">Projects</h1>
-        <div class="skills-details-container">
-            <div class="about-container"></div>
-            <div  id="project1_img" class="details-container color-container">
-                <h2 class="skills-sub-title project-title">Project 1</h2>
-                <p class="project_disc">Simon-Flash Game (Game Website)</p>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://aadarshsharma1708.github.io/Simon-Game-project/'">
-                    GitHub
-                </button>
+
+        <div class="projects-scroll">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./quizspark-ss.png" alt="QuizSpark Quiz Application">
+                </div>
+
+                <div class="project-content">
+                    <h2 class="project-title">QuizSpark</h2>
+
+                    <p class="project-disc">
+                        A scalable full-stack quiz application featuring JWT-based authentication,
+                        dynamic quiz categories, score tracking, leaderboards, and admin controls
+                        for structured data management and performance analysis.
+                    </p>
+
+                    <div class="project-skills">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://quizspark.vercel.app" target="_blank" class="btn live-btn"
+                            rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aadarshsharma1708/QuizSpark1.0" target="_blank"
+                            class="btn github-btn" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
             </div>
-            <div id="project2_img" class="details-container color-container">
-                <h2 class="skills-sub-title project-title">Project 2</h2>
-                <p class="project_disc">Digital-Clock (Clock Website)</p>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://aadarshsharma1708.github.io/digital-clock/'">
-                    GitHub
-                </button>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./blognest-ss.PNG" alt="BlogNest Blogging Platform">
+                </div>
+
+                <div class="project-content">
+                    <h2 class="project-title">BlogNest</h2>
+
+                    <p class="project-disc">
+                        A modern and responsive blogging platform that enables users to create,
+                        edit, and manage articles with secure authentication, rich text editing,
+                        image uploads, and SEO-friendly post management.
+                    </p>
+
+                    <div class="project-skills">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Appwrite</span>
+                        <span class="skill-tag">Redux Toolkit</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://blog-nest-five.vercel.app/" target="_blank" class="btn live-btn"
+                            rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aadarshsharma1708/BlogNest" target="_blank" class="btn github-btn"
+                            rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
             </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./to-do-ss.png" alt="To-Do App">
+                </div>
+
+                <div class="project-content">
+                    <h2 class="project-title">To-Do App</h2>
+
+                    <p class="project-disc">
+                        A task management application that allows users to add, update, and delete
+                        tasks with data storage across sessions, ensuring smooth user
+                        interaction through efficient state management.
+                    </p>
+
+                    <div class="project-skills">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Context API</span>
+                        <span class="skill-tag">Local Storage</span>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://todo-context-local.vercel.app/" target="_blank" class="btn live-btn"
+                            rel="noopener noreferrer">
+                            Live Demo
+                        <a href="https://github.com/aadarshsharma1708/Reactjs-Projects/tree/main/10TodoContextLocal"
+                            target="_blank" class="btn github-btn" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./simen-game.png" alt="Simon Game Thumbnail">
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Simon Flash Game</h2>
+                    <p class="project-disc">A fun and interactive memory-based game where users observe and repeat an increasingly complex sequence of button flashes. The game challenges concentration and recall, tracks user progress, and increases difficulty as the sequence grows, providing an engaging and intuitive user experience.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://aadarshsharma1708.github.io/Simon-Game-project/" target="_blank"
+                            class="btn live-btn" rel="noopener">Live Demo</a>
+                        <a href="https://github.com/aadarshsharma1708/Simon-Game-project" target="_blank"
+                            class="btn github-btn" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./clock.jpg" alt="Digital Clock Thumbnail">
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Digital Clock</h2>
+                    <p class="project-disc">A responsive digital clock web application that displays real-time updates with a clean, styled user interface. The application dynamically updates the current time and adapts seamlessly across different screen sizes, ensuring a smooth and visually consistent user experience.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://aadarshsharma1708.github.io/digital-clock/" target="_blank"
+                            class="btn live-btn" rel="noopener">Live Demo</a>
+                        <a href="https://github.com/aadarshsharma1708/digital-clock" target="_blank"
+                            class="btn github-btn" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project-cards here -->
         </div>
-        </div>
+
         <img src="arrow.png" alt="arrow" class="arrow-icon" onclick="location.href='#contact'" />
     </section>
+
+
     <section id="contact">
         <p class="contact_text_P1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
